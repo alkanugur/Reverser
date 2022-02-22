@@ -1,0 +1,12 @@
+clc;
+clear all;
+close all;
+ters=0;
+x=input('sayi gir:');
+while x>0
+ters= ters*10 ;
+ters=ters+mod(x,10);
+x=x-mod(x,10);
+x=x/10;
+end
+fprintf('sayinin tersi: %d\n',ters)
